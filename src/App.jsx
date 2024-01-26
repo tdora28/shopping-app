@@ -5,7 +5,7 @@ import { store } from './store/store';
 import About from './routes/About';
 import Cart from './routes/Cart';
 import Home from './routes/Home';
-import Product from './routes/Product';
+import ProductSingle from './routes/ProductSingle';
 import Products from './routes/Products';
 import Root from './routes/Root';
 import NotFound404 from './routes/NotFound404';
@@ -34,7 +34,7 @@ function App() {
         },
         {
           path: '/products/:id',
-          element: <Product />,
+          element: <ProductSingle />,
         },
         {
           path: '*',
