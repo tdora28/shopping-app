@@ -6,6 +6,7 @@ import Home from './routes/Home';
 import Product from './routes/Product';
 import Products from './routes/Products';
 import Root from './routes/Root';
+import NotFound404 from './routes/NotFound404';
 
 function App() {
   const router = createBrowserRouter([
@@ -22,16 +23,20 @@ function App() {
           element: <About />,
         },
         {
-          path: '/products',
-          element: <Products />,
-        },
-        {
           path: '/cart',
           element: <Cart />,
         },
         {
+          path: '/products',
+          element: <Products />,
+        },
+        {
           path: '/products/:id',
           element: <Product />,
+        },
+        {
+          path: '*',
+          element: <NotFound404 />,
         },
       ],
     },
