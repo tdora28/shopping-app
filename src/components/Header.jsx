@@ -1,5 +1,5 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -14,8 +14,8 @@ function Header() {
               to="/"
               sx={{
                 mr: 2,
-                color: "inherit",
-                textDecoration: "none",
+                color: 'inherit',
+                textDecoration: 'none',
               }}
             >
               Shopping App
@@ -23,6 +23,15 @@ function Header() {
           </Typography>
           <Button color="inherit" variant="text" component={Link} to="/">
             Home
+          </Button>
+          <Button color="inherit" variant="text" component={Link} to="/about">
+            About
+          </Button>
+          <Button color="inherit" variant="text" component={Link} to="/products">
+            Products
+          </Button>
+          <Button color="inherit" variant="text" component={Link} to="/cart">
+            Cart
           </Button>
         </Toolbar>
       </AppBar>
