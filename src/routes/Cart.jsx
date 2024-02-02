@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import ProductSingleCart from './ProductSingleCart';
+import CartSingle from './CartSingle';
 
 const Cart = () => {
   const { cart } = useSelector((state) => state.cart);
@@ -7,7 +7,7 @@ const Cart = () => {
   return (
     <div className="products-grid">
       {cart.map((product) => (
-        <ProductSingleCart key={product.id} {...product}></ProductSingleCart>
+        <CartSingle key={product.id} {...product}></CartSingle>
       ))}
     </div>
   );
